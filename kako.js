@@ -15,24 +15,29 @@ function randomArrangeAndShare(teamCount) {
             objectType: 'feed',
             content: {
                 title: '🎉 팀 배치 완료!',
-                description: resultText, // 위에서 만든 팀 명단 텍스트가 여기 들어가요
+                description: resultText,
                 imageUrl: 'https://cdn.pixabay.com/photo/2017/11/10/05/24/group-2935521_1280.png',
                 link: {
-                    mobileWebUrl: window.location.href,
-                    webUrl: window.location.href,
+                    // 여기를 등록하신 도메인으로 정확히 바꿔줍니다.
+                    mobileWebUrl: 'https://949e5b88.fish-and-teams-bls.pages.dev',
+                    webUrl: 'https://949e5b88.fish-and-teams-bls.pages.dev',
                 },
             },
             buttons: [
                 {
                     title: '나도 확인하기',
                     link: {
-                        mobileWebUrl: window.location.href,
-                        webUrl: window.location.href,
+                        mobileWebUrl: 'https://949e5b88.fish-and-teams-bls.pages.dev',
+                        webUrl: 'https://949e5b88.fish-and-teams-bls.pages.dev',
                     },
+                    link: {
+                        mobileWebUrl: 'https://fish-and-teams-bls.pages.dev',
+                        webUrl: 'https://fish-and-teams-bls.pages.dev'
+                    }                   
                 },
             ],
         });
     } else {
-        alert('카카오 SDK가 초기화되지 않았습니다. 페이지를 새로고침하고 다시 시도해주세요.');
+        alert('카카오 SDK가 초기화되지 않았습니다.');
     }
-}
+}2
